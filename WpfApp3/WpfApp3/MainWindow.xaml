@@ -1,0 +1,76 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="702" Width="1152">
+    <Grid Margin="0,-27,0,31" HorizontalAlignment="Left" Width="1142" RenderTransformOrigin="0.49,0.493">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="285*"/>
+            <ColumnDefinition Width="286*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="sở thích của bạn" HorizontalAlignment="Left" 
+               Margin="65,56,0,0" 
+               VerticalAlignment="Top" Height="55" 
+               Width="435"
+               FontSize=" 30"/>
+
+        <Label Content="màu bạn thích" Grid.Column="1" HorizontalAlignment="Left" 
+               Margin="55,56,0,0" 
+               VerticalAlignment="Top" 
+               Height="55" 
+               Width="480"
+               FontSize=" 30"/>
+        
+        <CheckBox x:Name="chknghenhac" Content="nghe nhạc" HorizontalAlignment="Left" 
+                  Margin="65,141,0,0" VerticalAlignment="Top" Height="50" Width="200"
+                  FontSize=" 30"/>
+        <CheckBox x:Name="chkxemphim" Content="xem phim" HorizontalAlignment="Left" 
+                  Margin="65,226,0,0" VerticalAlignment="Top" Height="50" Width="200"
+                  FontSize=" 30"/>
+        <CheckBox x:Name="chkthethao" Content="chơi thể thao" HorizontalAlignment="Left" 
+                  Margin="65,310,0,0" VerticalAlignment="Top" Height="50" Width="200"
+                  FontSize=" 30"/>
+        <CheckBox x:Name="chkmuasam" Content="đi mua sắm" HorizontalAlignment="Left" 
+                  Margin="65,406,0,0" VerticalAlignment="Top" Height="50" Width="200"
+                  FontSize=" 30"/>
+        <CheckBox x:Name="chkdulich" Content="đi du lịch" HorizontalAlignment="Left" 
+                  Margin="65,501,0,0" VerticalAlignment="Top" Height="50" Width="200"
+                  FontSize=" 30"/>
+
+        <RadioButton  x:Name="rdodo" Content="đỏ" Grid.Column="1" HorizontalAlignment="Left" 
+                  Margin="55,141,0,0" VerticalAlignment="Top" Height="50" Width="200"
+                  FontSize=" 30"/>
+        <RadioButton x:Name="rdotrang" Content="trắng" Grid.Column="1" HorizontalAlignment="Left" 
+                  Margin="55,226,0,0" VerticalAlignment="Top" Height="50" Width="200"
+                  FontSize=" 30"/>
+        <RadioButton x:Name="rdovang" Content="vàng" Grid.Column="1" HorizontalAlignment="Left" 
+                  Margin="55,304,0,0" VerticalAlignment="Top" Height="50" Width="200"
+                  FontSize=" 30"/>
+        <RadioButton x:Name="rdohong" Content="hồng" Grid.Column="1" HorizontalAlignment="Left" 
+                  Margin="55,406,0,0" VerticalAlignment="Top" Height="50" Width="200"
+                  FontSize=" 30" RenderTransformOrigin="0.3,-0.499"/>
+        <RadioButton x:Name="rdotim" Content="tím" Grid.Column="1" HorizontalAlignment="Left" 
+                  Margin="55,495,0,0" VerticalAlignment="Top" Height="50" Width="200"
+                  FontSize=" 30" RenderTransformOrigin="0.3,-0.499"/>
+        
+        <Button x:Name="btsothich" Content="sở thích của bạn" HorizontalAlignment="Left" 
+                Margin="65,581,0,0" 
+                VerticalAlignment="Top" 
+                Height="70" 
+                Width="480"
+                FontSize=" 50"
+                Click="btsothich_click"/>
+
+        <Button x:Name="btmau" Content="màu bạn thích" Grid.Column="1" HorizontalAlignment="Left" 
+                Margin="55,581,0,0" 
+                VerticalAlignment="Top" 
+                Height="70" 
+                Width="480"
+                FontSize=" 50"
+                Click="btmau_click"/>
+
+    </Grid>
+</Window>
